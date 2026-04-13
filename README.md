@@ -22,13 +22,14 @@
 📂 目录结构
 -------
 
-    .├── cases/          # 测试案例目录 (用于存放不同的漏洞场景或用户自定义文件)
-     ├── config/         # 配置文件目录 (存放 Kernel 和 BusyBox 的默认配置模板)
-     ├── scripts/        # 核心脚本目录 (包含所有构建阶段的子脚本)
-     ├── .gitignore      # Git 忽略规则
-     ├── Makefile        # 可选的 Make 辅助文件
-     ├── lab.sh          # 主入口控制脚本
-     └── README.md       # 项目说明文档
+    .
+    ├── cases/          # 测试案例目录 (用于存放不同的漏洞场景或用户自定义文件)
+    ├── config/         # 配置文件目录 (存放 Kernel 和 BusyBox 的默认配置模板)
+    ├── scripts/        # 核心脚本目录 (包含所有构建阶段的子脚本)
+    ├── .gitignore      # Git 忽略规则
+    ├── Makefile        # 可选的 Make 辅助文件
+    ├── lab.sh          # 主入口控制脚本
+    └── README.md       # 项目说明文档
 
 🛠️ 环境依赖
 --------
@@ -161,5 +162,3 @@ sudo apt install -y musl-tools
 * **启动并等待 GDB 连接 (调试模式)：** `./start-wait-gdb.sh`
 
 * **连接 GDB 调试器：** `./gdb.sh`
-
-
