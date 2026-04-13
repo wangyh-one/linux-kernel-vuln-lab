@@ -26,13 +26,13 @@ cp -f "${initramfs}" "${ws_dir}/initramfs.cpio.gz"
 rsync -a "${rootfs_src}/" "${ws_dir}/rootfs/"
 
 cat > "${ws_dir}/meta.env" <<EOF
-QEMU_MEMORY=${QEMU_MEMORY}
-QEMU_SMP=${QEMU_SMP}
-QEMU_NET=${QEMU_NET}
-QEMU_EXTRA_ARGS=${QEMU_EXTRA_ARGS}
-KERNEL_CMDLINE=${KERNEL_CMDLINE}
-KERNEL_VERSION=${version}
-CASE_NAME=${case_name}
+QEMU_MEMORY="${QEMU_MEMORY}"
+QEMU_SMP="${QEMU_SMP}"
+QEMU_NET="${QEMU_NET}"
+QEMU_EXTRA_ARGS="${QEMU_EXTRA_ARGS}"
+KERNEL_CMDLINE="${KERNEL_CMDLINE}"
+KERNEL_VERSION="${version}"
+CASE_NAME="${case_name}"
 EOF
 
 cat > "${ws_dir}/README.txt" <<'EOF'
