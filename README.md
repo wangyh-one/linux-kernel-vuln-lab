@@ -44,13 +44,19 @@ sudo apt install -y \
   build-essential bc bison flex libelf-dev libssl-dev dwarves pahole \
   cpio rsync curl xz-utils tar gzip bzip2 file \
   qemu-system-x86 qemu-utils gdb python3 wget
-chmod -R +x .    #赋予执行权限 
 ```
 
 ### 可选依赖 (用于构建静态 BusyBox)
 
 ```bash
 sudo apt install -y musl-tools
+```
+
+### 基础权限
+
+```bash
+cd linux-kernel-vuln-lab
+chmod -R +x .    #赋予执行权限 
 ```
 
 🚀 快速开始
